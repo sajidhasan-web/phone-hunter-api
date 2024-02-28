@@ -28,25 +28,23 @@
     </header>
     <main class="container mx-auto px-5 md:px-7 lg:px-10 mt-[300px]">
         <!-- search phone section -->
-        <section class="">
+        <section>
             <h3 class="text-3xl md:text-4xl font-bold text-center">Search your phone</h3>
             <div class="flex justify-center mt-8">
-                <div class="w-[500px] "><input type="text" class="p-3 bg-[#100F0F0C]  w-full outline-none  rounded-tl-lg rounded-bl-lg" placeholder="Search your phone"></div>
-                <button class="btn text-xl font-bold bg-[#0D6EFD] text-white hover:text-black">Buy Now</button>
+                <div class="w-[500px] "><input type="text" id="search-field" class="p-3 bg-[#100F0F0C]  w-full outline-none  rounded-tl-lg rounded-bl-lg" placeholder="Search your phone"></div>
+                <button onclick="handleSearch()" class="btn text-xl font-bold bg-[#0D6EFD] text-white">Search</button>
             </div>
         </section>
         <section class="container mx-auto px-5 md:px-7 lg:px-10 mt-12">
-            <div class="phones-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- loading Spinner -->
+            <div id="loading-spinner" class="text-center hidden"><span class="loading loading-spinner loading-lg bg-[#0D6EFD]"></span></div>
+            <div id="phones-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- phones-card -->
-                <div class="card p-6 border">
-                    <div class="bg-[#0D6EFD0C] flex justify-center p-10 rounded-lg"><img src="./images/pngwing 3.png" alt=""></div>
-                   <div class="text-center mt-6 space-y-4">
-                    <h4 class="text-2xl font-bold">Iphone 13 Pro Max</h4>
-                    <p class="text-[#706F6F] text-lg">There are many variations of <br> passages of available, but the <br> majority have suffered</p>
-                    <p class="text-2xl font-bold">$999</p>
-                    <button class="btn text-xl font-semibold bg-[#0D6EFD] text-white">Show Details</button>
-                   </div>
-                </div>
+                
+            </div>
+            <!-- show all btn -->
+            <div id="showAll-container" class="text-center hidden mt-12">
+                <button onclick="handleShowAll()" class="btn text-xl font-bold bg-[#0D6EFD] text-white">Show all</button>
             </div>
         </section>
     </main>
@@ -67,7 +65,7 @@
         </div>
         <div class="container mx-auto px-5 md:px-7 lg:px-10 bg-[#CFCFCF] h-[1px] mt-12"></div>
         <!-- footer bottom -->
-        <div class="container mx-auto mt-12 flex flex-wrap gap-6 justify-between px-5 md:px-7 lg:px-10">
+        <div class="container mx-auto mt-12 flex flex-wrap gap-6 justify-center text-center md:text-start md:justify-between px-5 md:px-7 lg:px-10">
             <div class="text-[#403F3F] text-xl font-medium space-y-5">
                 <p>Product</p>
                 <p>Browse jobs</p>
