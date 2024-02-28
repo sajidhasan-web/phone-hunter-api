@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <!-- daisy UI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-poppins">
+    <header class="bg-[#0D6EFD0C] h-[806px]">
+        <!-- nav section -->
+        <nav class="container mx-auto px-5 md:px-7 lg:px-10 flex items-center justify-between py-10">
+           <p class="text-2xl font-bold text-[#403F3F]"><a href="#">Hot Gadgets</a></p>
+           <button class="btn text-xl font-bold bg-[#0D6EFD] text-white">Sign Up</button>
+        </nav>
+        <!-- banner section -->
+        <div class="container mx-auto px-5 md:px-7 lg:px-10 items-center justify-between flex gap-7 flex-col mt-12">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#100F0F] text-center">Apple Iphone 13 Pro Max</h1>
+            <p class="text-lg text-[#706F6F] text-center">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+            <button class="btn text-xl font-bold bg-[#0D6EFD] text-white">Buy Now</button>
+        </div>
+                <!-- banner Image section -->
+         <div class="container mx-auto px-5 md:px-7 lg:px-10 lg:w-[840px] lg:h-[550px]flex justify-center mt-16">
+              <img class="h-full w-full" src="./images/Group 48095420.png" alt="">
+         </div>
+    </header>
+    <main class="container mx-auto px-5 md:px-7 lg:px-10 mt-[300px]">
+        <!-- search phone section -->
+        <section class="">
+            <h3 class="text-3xl md:text-4xl font-bold text-center">Search your phone</h3>
+            <div class="flex justify-center mt-8">
+                <div class="w-[500px]"><input type="text" class="p-3 bg-[#100F0F0C] w-full outline-none rounded-xl" placeholder="Search your phone"></div>
+                <button class="btn text-xl font-bold bg-[#0D6EFD] text-white">Buy Now</button>
+            </div>
+        </section>
+        <section class="container mx-auto px-5 md:px-7 lg:px-10 mt-12">
+            <div class="phones-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- phones-card -->
+                <div class="card p-6 border">
+                    <div class="bg-[#0D6EFD0C] flex justify-center p-10 rounded-lg"><img src="./images/pngwing 3.png" alt=""></div>
+                   <div class="text-center mt-6 space-y-4">
+                    <h4 class="text-2xl font-bold">Iphone 13 Pro Max</h4>
+                    <p class="text-[#706F6F] text-lg">There are many variations of <br> passages of available, but the <br> majority have suffered</p>
+                    <p class="text-2xl font-bold">$999</p>
+                    <button class="btn text-xl font-semibold bg-[#0D6EFD] text-white">Show Details</button>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#0D6EFD0C] mt-12 p-16 md:p-[100px]">
+        <div class="container mx-auto md:flex justify-between px-5 md:px-7 lg:px-10 space-y-6 md:space-y-0">
+            <div class="space-y-3">
+                <h2 class="text-[#100F0F] text-3xl md:text-5xl font-bold">Hot Gadgets</h2>
+                <p class="text-[#706F6F] text-lg font-semibold">You can definitely work.</p>
+            </div>
+            <div class="space-y-6 md:space-y-0 md:flex items-center gap-9">
+                <div class="flex gap-5 text-2xl">
+                    <p class="text-primary"><a href="#"><i class="fa-brands fa-facebook"></i></a></p>
+                    <p class="text-orange-500"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+                    <p class="text-sky-500"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>
+                </div>
+                <button class="btn text-xl font-bold bg-[#0D6EFD] text-white">Join Premium</button>
+            </div>
+        </div>
+        <div class="container mx-auto px-5 md:px-7 lg:px-10 bg-[#CFCFCF] h-[1px] mt-12"></div>
+        <!-- footer bottom -->
+        <div class="container mx-auto mt-12 flex flex-wrap gap-6 justify-between px-5 md:px-7 lg:px-10">
+            <div class="text-[#403F3F] text-xl font-medium space-y-5">
+                <p>Product</p>
+                <p>Browse jobs</p>
+                <p>Remote jobs</p>
+                <p>Startup jobs</p>
+                <p>Company jobs</p>
+            </div>
+            <div class="text-[#403F3F] text-xl font-medium space-y-5">
+                <p>Product</p>
+                <p>Browse jobs</p>
+                <p>Remote jobs</p>
+                <p>Startup jobs</p>
+                <p>Company jobs</p>
+            </div>
+            <div class="text-[#403F3F] text-xl font-medium space-y-5">
+                <p>Product</p>
+                <p>Browse jobs</p>
+                <p>Remote jobs</p>
+                <p>Startup jobs</p>
+                <p>Company jobs</p>
+            </div>
+            <div class="text-[#403F3F] text-xl font-medium space-y-5">
+                <p>Product</p>
+                <p>Browse jobs</p>
+                <p>Remote jobs</p>
+                <p>Startup jobs</p>
+                <p>Company jobs</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/bfb0bcad50.js" crossorigin="anonymous"></script>
+    <script src="./js/phone.js"></script>   
+</body>
+</html>
